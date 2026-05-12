@@ -11,11 +11,7 @@ public class InstrumentosPrincipal {
         bateria.setTipo("Acustica");
         bateria.setNumeroPratos(3);
         bateria.setNumeroDeTambores(4);
-
-        System.out.println("Modelo: " + bateria.getModelo());
-        System.out.println("Tipo: " + bateria.getTipo());
-        System.out.println("Pratos: " + bateria.getNumeroPratos());
-        System.out.println("Tambores: " + bateria.getNumeroDeTambores());
+        bateria.exibirFichaTecnica();
     }
 }
 

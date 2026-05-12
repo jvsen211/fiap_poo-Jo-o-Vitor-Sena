@@ -39,5 +39,12 @@ public class Bateria {
         public void setNumeroDeTambores(int numeroDeTambores) {
             this.numeroDeTambores = numeroDeTambores;
         }
+
+    public void exibirFichaTecnica() {
+        System.out.println("Modelo: " + getModelo());
+        System.out.println("Tipo: " + getTipo());
+        System.out.println("Numero de pratos: " + getNumeroPratos());
+        System.out.println("Numero de tambores: " + getNumeroDeTambores());
+    }
     }
 
