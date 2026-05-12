@@ -11,6 +11,8 @@ public class InstrumentosPrincipal {
         bateria.setTipo("Acustica");
         bateria.setNumeroPratos(3);
         bateria.setNumeroDeTambores(4);
+        bateria.setNumeroDeBumbos(2);
+        bateria.TotaldeComponentes();
         bateria.exibirFichaTecnica();
     }
 }

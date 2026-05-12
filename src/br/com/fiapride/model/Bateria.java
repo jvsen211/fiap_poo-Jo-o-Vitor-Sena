@@ -5,10 +5,18 @@ public class Bateria {
         private String modelo;
         private String tipo;
         private int numeroPratos;
+        private int numeroDeBumbos;
         private int numeroDeTambores;
 
-        // getters e setters simples (opcional na aula 1, mas pode deixar)
-        public String getModelo() {
+    public int getNumeroDeBumbos() {
+        return numeroDeBumbos;
+    }
+
+    public void setNumeroDeBumbos(int numeroDeBumbos) {
+        this.numeroDeBumbos = numeroDeBumbos;
+    }
+
+    public String getModelo() {
             return modelo;
         }
 
@@ -38,6 +46,12 @@ public class Bateria {
 
         public void setNumeroDeTambores(int numeroDeTambores) {
             this.numeroDeTambores = numeroDeTambores;
+        }
+
+        public void TotaldeComponentes() {
+            int total = getNumeroPratos() + getNumeroDeBumbos() + getNumeroDeTambores();
+
+            System.out.println("Total de componentes na Bateria: " + total);
         }
 
     public void exibirFichaTecnica() {
