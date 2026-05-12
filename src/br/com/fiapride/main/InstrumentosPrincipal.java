@@ -5,13 +5,10 @@ import br.com.fiapride.model.Bateria;
 
 public class InstrumentosPrincipal {
     public static void main(String[] args) {
-        Bateria bateria = new Bateria();
-
-        bateria.setModelo("Classico");
-        bateria.setTipo("Acustica");
-        bateria.setNumeroPratos(3);
-        bateria.setNumeroDeTambores(4);
-        bateria.setNumeroDeBumbos(2);
+        Bateria bateria = new Bateria(
+                "Classico","Acustica",
+                3,4,
+                2);
         bateria.totalDeComponentes();
         bateria.exibirFichaTecnica();
     }

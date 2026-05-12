@@ -8,6 +8,19 @@ public class Bateria {
     private int numeroDeBumbos;
     private int numeroDeTambores;
 
+    public Bateria(int numeroPratos, int numeroDeTambores, int numeroDeBumbos, String tipo) {
+        this.modelo = modelo;
+        this.numeroPratos = numeroPratos;
+        this.numeroDeTambores = numeroDeTambores;
+        this.numeroDeBumbos = numeroDeBumbos;
+        this.tipo = tipo;
+    }
+
+    public Bateria (String modelo, String tipo, int numeroDeBumbos, int numeroDeTambores, int numeroPratos){
+        this.modelo=modelo;
+
+    }
+
     public int getNumeroDeBumbos() {
         return numeroDeBumbos;
     }
