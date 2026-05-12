@@ -12,7 +12,7 @@ public class InstrumentosPrincipal {
         bateria.setNumeroPratos(3);
         bateria.setNumeroDeTambores(4);
         bateria.setNumeroDeBumbos(2);
-        bateria.TotaldeComponentes();
+        bateria.totalDeComponentes();
         bateria.exibirFichaTecnica();
     }
 }
