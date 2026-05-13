@@ -73,10 +73,9 @@ public class Bateria extends Especificacao {
         System.out.println("Total de componentes na bateria: " + total);
     }
 
+    @Override
     public void exibirFichaTecnica() {
-
-        System.out.println("Modelo: " + getModelo());
-        System.out.println("Tipo: " + getTipo());
+        super.exibirFichaTecnica();
         System.out.println("Numero de pratos: " + getNumeroPratos());
         System.out.println("Numero de tambores: " + getNumeroDeTambores());
         System.out.println("NUmeros de bumbos: " + getNumeroDeBumbos());

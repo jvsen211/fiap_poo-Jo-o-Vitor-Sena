@@ -37,6 +37,12 @@ public class Especificacao {
     public void setMarca(String marca) {
         this.marca = marca;
     }
+    public void exibirFichaTecnica() {
+        System.out.println("Cor: " + cor);
+        System.out.println("Marca: " + marca);
+        System.out.println("Material: " + material);
+        System.out.println("Tipo: " + tipo);
+    }
 
 
 

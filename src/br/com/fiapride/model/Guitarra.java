@@ -49,11 +49,9 @@ public class Guitarra extends Especificacao{
     public void setPossuiAlavanca(boolean possuiAlavanca) {
         this.possuiAlavanca = possuiAlavanca;
     }
-
+    @Override
     public void exibirFichaTecnica() {
-        System.out.println("Cor: " + getCor());
-        System.out.println("Marca: " + getMarca());
-        System.out.println("Material: " + getMaterial());
+        super.exibirFichaTecnica();
         System.out.println("Tipo (Eletronica / Acustica ): " +getTipo());
         System.out.println("Numero de cordas: " + numeroDeCordas);
         System.out.println("Tipo de captador: " + tipoCaptador);
