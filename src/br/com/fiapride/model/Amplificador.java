@@ -11,7 +11,7 @@ public class Amplificador {
         this.potencia = potencia;
     }
 
-    // getters e setters
+
     public boolean isPresente() {
         return presente;
     }

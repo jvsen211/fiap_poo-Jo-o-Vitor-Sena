@@ -7,28 +7,33 @@ import br.com.fiapride.model.Guitarra;
 
 public class InstrumentosPrincipal {
     public static void main(String[] args) {
+        System.out.println("----Bateria----");
         Bateria bateria = new Bateria(
-                "Classico",
+                "Preta",
+                "Roland",
+                "Madeira: Maple",
                 "Acustica",
+                "Classico",
                 3,
                 4,
-                2);
+                2
+        );
         bateria.totalDeComponentes();
         bateria.exibirFichaTecnica();
 
         System.out.println("----Guitarra----");
 
         Guitarra guitarra = new Guitarra(
-                "Stratocaster",
+                "Preta",
+                "Fender",
+                "Madeira",
+                "Eletrica",
                 6,
                 "Humbucker",
-                true,
-                "Eletronica");
+                true);
 
         Amplificador amplificadorGuitarra = new Amplificador(
-                true,
-                "Fender",
-                100);
+                true, "Roland", 150);
         guitarra.setAmplificador(amplificadorGuitarra);
 
         guitarra.exibirFichaTecnica();

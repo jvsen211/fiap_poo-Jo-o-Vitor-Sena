@@ -1,17 +1,19 @@
 package br.com.fiapride.model;
 
-public class Guitarra {
-    private String marca;
+public class Guitarra extends Especificacao{
     private int numeroDeCordas;
     private String tipoCaptador;
     private boolean possuiAlavanca;
-    private String tipo;
     private Amplificador amplificador;
 
-    public Guitarra (String marca, int numeroDeCordas, String tipoCaptador, boolean possuiAlavanca, String tipo){
-        this.marca= marca;
+    public Guitarra(String cor, String marca, String material, String tipo,
+                    int numeroDeCordas, String tipoCaptador, boolean possuiAlavanca) {
+
+        setCor(cor);
+        setMarca(marca);
+        setMaterial(material);
+        setTipo(tipo);
         this.numeroDeCordas = numeroDeCordas;
-        this.tipo = tipo;
         this.tipoCaptador = tipoCaptador;
         this.possuiAlavanca = possuiAlavanca;
     }
@@ -22,14 +24,6 @@ public class Guitarra {
 
     public void setAmplificador(Amplificador amplificador) {
         this.amplificador = amplificador;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
     }
 
     public int getNumeroDeCordas() {
@@ -56,15 +50,11 @@ public class Guitarra {
         this.possuiAlavanca = possuiAlavanca;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
     public void exibirFichaTecnica() {
-        System.out.println("Tipo (Eletronica / Acustica ): " + tipo);
+        System.out.println("Cor: " + getCor());
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Material: " + getMaterial());
+        System.out.println("Tipo (Eletronica / Acustica ): " +getTipo());
         System.out.println("Numero de cordas: " + numeroDeCordas);
         System.out.println("Tipo de captador: " + tipoCaptador);
         System.out.println("Possui alavanca: " + possuiAlavanca);

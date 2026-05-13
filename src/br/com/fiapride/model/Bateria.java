@@ -1,21 +1,24 @@
 package br.com.fiapride.model;
 
-public class Bateria {
+public class Bateria extends Especificacao {
 
     private String modelo;
-    private String tipo;
     private int numeroPratos;
     private int numeroDeBumbos;
     private int numeroDeTambores;
     private Amplificador amplificador;
 
+    public Bateria(String cor, String marca, String material, String tipo,String modelo,
+                   int numeroPratos, int numeroDeTambores, int numeroDeBumbos) {
 
-    public Bateria(String modelo, String tipo, int numeroPratos, int numeroDeTambores, int numeroDeBumbos) {
-        this.modelo = modelo;
+        setCor(cor);
+        setMarca(marca);
+        setMaterial(material);
+        setTipo(tipo);
+        this.modelo= modelo;
         this.numeroPratos = numeroPratos;
         this.numeroDeTambores = numeroDeTambores;
         this.numeroDeBumbos = numeroDeBumbos;
-        this.tipo = tipo;
     }
 
     public Amplificador getAmplificador() {
@@ -42,13 +45,7 @@ public class Bateria {
         this.modelo = modelo;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
 
     public int getNumeroPratos() {
         return numeroPratos;
