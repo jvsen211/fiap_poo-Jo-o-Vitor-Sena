@@ -16,10 +16,6 @@ public class Bateria {
         this.tipo = tipo;
     }
 
-    public Bateria (String modelo, String tipo, int numeroDeBumbos, int numeroDeTambores, int numeroPratos){
-        this.modelo=modelo;
-
-    }
 
     public int getNumeroDeBumbos() {
         return numeroDeBumbos;
