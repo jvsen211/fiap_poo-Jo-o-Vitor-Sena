@@ -1,6 +1,6 @@
 package br.com.fiapride.model;
 
-public class Guitarra extends Especificacao{
+public class Guitarra extends Especificacao implements FichaTecnica{
     private int numeroDeCordas;
     private String tipoCaptador;
     private boolean possuiAlavanca;
@@ -51,7 +51,6 @@ public class Guitarra extends Especificacao{
     }
     @Override
     public void exibirFichaTecnica() {
-        System.out.println("---- GUITARRA ----");
         System.out.println("Cor: " + getCor());
         System.out.println("Marca: " + getMarca());
         System.out.println("Material: " + getMaterial());

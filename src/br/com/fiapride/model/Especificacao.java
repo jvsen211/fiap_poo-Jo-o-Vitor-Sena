@@ -1,6 +1,6 @@
 package br.com.fiapride.model;
 
-public abstract class Especificacao {
+public  class Especificacao {
 
     private String cor;
     private String marca;
@@ -38,7 +38,4 @@ public abstract class Especificacao {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-
-
-    public abstract void exibirFichaTecnica();
 }

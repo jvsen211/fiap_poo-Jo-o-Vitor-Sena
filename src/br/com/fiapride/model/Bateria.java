@@ -1,6 +1,6 @@
 package br.com.fiapride.model;
 
-public class Bateria extends Especificacao {
+public class Bateria extends Especificacao implements FichaTecnica {
 
     private String modelo;
     private int numeroPratos;
@@ -75,7 +75,6 @@ public class Bateria extends Especificacao {
 
     @Override
     public void exibirFichaTecnica() {
-        System.out.println("---- BATERIA ----");
         System.out.println("Cor: " + getCor());
         System.out.println("Marca: " + getMarca());
         System.out.println("Material: " + getMaterial());
