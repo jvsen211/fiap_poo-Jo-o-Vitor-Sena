@@ -6,6 +6,7 @@ public class Guitarra {
     private String tipoCaptador;
     private boolean possuiAlavanca;
     private String tipo;
+    private Amplificador amplificador;
 
     public Guitarra (String marca, int numeroDeCordas, String tipoCaptador, boolean possuiAlavanca, String tipo){
         this.marca= marca;
@@ -13,6 +14,14 @@ public class Guitarra {
         this.tipo = tipo;
         this.tipoCaptador = tipoCaptador;
         this.possuiAlavanca = possuiAlavanca;
+    }
+
+    public Amplificador getAmplificador() {
+        return amplificador;
+    }
+
+    public void setAmplificador(Amplificador amplificador) {
+        this.amplificador = amplificador;
     }
 
     public String getMarca() {
@@ -55,10 +64,15 @@ public class Guitarra {
         this.tipo = tipo;
     }
     public void exibirFichaTecnica() {
-        System.out.println("Tipo: " + tipo);
+        System.out.println("Tipo (Eletronica / Acustica ): " + tipo);
         System.out.println("Numero de cordas: " + numeroDeCordas);
         System.out.println("Tipo de captador: " + tipoCaptador);
         System.out.println("Possui alavanca: " + possuiAlavanca);
+        if(amplificador != null && amplificador.isPresente()) {
+            System.out.println("Tem amplificador: Sim");
+        } else {
+            System.out.println("Tem amplificador: Não");
+        }
     }
 
 

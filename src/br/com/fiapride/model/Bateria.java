@@ -7,8 +7,10 @@ public class Bateria {
     private int numeroPratos;
     private int numeroDeBumbos;
     private int numeroDeTambores;
+    private Amplificador amplificador;
 
-    public Bateria(int numeroPratos, int numeroDeTambores, int numeroDeBumbos, String tipo) {
+
+    public Bateria(String modelo, String tipo, int numeroPratos, int numeroDeTambores, int numeroDeBumbos) {
         this.modelo = modelo;
         this.numeroPratos = numeroPratos;
         this.numeroDeTambores = numeroDeTambores;
@@ -16,6 +18,13 @@ public class Bateria {
         this.tipo = tipo;
     }
 
+    public Amplificador getAmplificador() {
+        return amplificador;
+    }
+
+    public void setAmplificador(Amplificador amplificador) {
+        this.amplificador = amplificador;
+    }
 
     public int getNumeroDeBumbos() {
         return numeroDeBumbos;
@@ -73,5 +82,14 @@ public class Bateria {
         System.out.println("Tipo: " + getTipo());
         System.out.println("Numero de pratos: " + getNumeroPratos());
         System.out.println("Numero de tambores: " + getNumeroDeTambores());
+        System.out.println("NUmeros de bumbos: " + getNumeroDeBumbos());
+
+        if (amplificador != null && amplificador.isPresente()) {
+            System.out.println("Tem amplificador: Sim");
+            System.out.println("Marca do amplificador: " + amplificador.getMarca());
+            System.out.println("Potência do amplificador: " + amplificador.getPotencia() + "W");
+        } else {
+            System.out.println("Tem amplificador: Não usa amplificador");
+        }
     }
 }
