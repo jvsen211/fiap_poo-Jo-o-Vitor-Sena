@@ -75,10 +75,14 @@ public class Bateria extends Especificacao {
 
     @Override
     public void exibirFichaTecnica() {
-        super.exibirFichaTecnica();
-        System.out.println("Numero de pratos: " + getNumeroPratos());
-        System.out.println("Numero de tambores: " + getNumeroDeTambores());
-        System.out.println("NUmeros de bumbos: " + getNumeroDeBumbos());
+        System.out.println("---- BATERIA ----");
+        System.out.println("Cor: " + getCor());
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Material: " + getMaterial());
+        System.out.println("Tipo: " + getTipo());
+        System.out.println("Pratos: " + numeroPratos);
+        System.out.println("Tambores: " + numeroDeTambores);
+        System.out.println("Bumbos: " + numeroDeBumbos);
 
         if (amplificador != null && amplificador.isPresente()) {
             System.out.println("Tem amplificador: Sim");

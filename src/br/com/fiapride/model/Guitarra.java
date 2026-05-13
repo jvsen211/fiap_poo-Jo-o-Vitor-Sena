@@ -51,11 +51,15 @@ public class Guitarra extends Especificacao{
     }
     @Override
     public void exibirFichaTecnica() {
-        super.exibirFichaTecnica();
-        System.out.println("Tipo (Eletronica / Acustica ): " +getTipo());
-        System.out.println("Numero de cordas: " + numeroDeCordas);
-        System.out.println("Tipo de captador: " + tipoCaptador);
-        System.out.println("Possui alavanca: " + possuiAlavanca);
+        System.out.println("---- GUITARRA ----");
+        System.out.println("Cor: " + getCor());
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Material: " + getMaterial());
+        System.out.println("Tipo: " + getTipo());
+        System.out.println("Cordas: " + numeroDeCordas);
+        System.out.println("Captador: " + tipoCaptador);
+        System.out.println("Alavanca: " + possuiAlavanca);
+
         if(amplificador != null && amplificador.isPresente()) {
             System.out.println("Tem amplificador: Sim");
         } else {

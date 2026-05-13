@@ -20,7 +20,7 @@ public class InstrumentosPrincipal {
         );
         bateria.totalDeComponentes();
         bateria.exibirFichaTecnica();
-
+        System.out.println();
         System.out.println("----Guitarra----");
 
         Guitarra guitarra = new Guitarra(

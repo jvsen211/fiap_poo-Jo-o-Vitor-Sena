@@ -1,18 +1,11 @@
 package br.com.fiapride.model;
 
-public class Especificacao {
+public abstract class Especificacao {
+
     private String cor;
     private String marca;
     private String material;
     private String tipo;
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
 
     public String getCor() {
         return cor;
@@ -20,6 +13,14 @@ public class Especificacao {
 
     public void setCor(String cor) {
         this.cor = cor;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
     public String getMaterial() {
@@ -30,20 +31,14 @@ public class Especificacao {
         this.material = material;
     }
 
-    public String getMarca() {
-        return marca;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-    public void exibirFichaTecnica() {
-        System.out.println("Cor: " + cor);
-        System.out.println("Marca: " + marca);
-        System.out.println("Material: " + material);
-        System.out.println("Tipo: " + tipo);
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
 
-
+    public abstract void exibirFichaTecnica();
 }
