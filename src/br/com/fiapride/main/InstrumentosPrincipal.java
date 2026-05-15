@@ -23,14 +23,7 @@ public class InstrumentosPrincipal {
         System.out.println();
         System.out.println("----Guitarra----");
 
-        Guitarra guitarra = new Guitarra(
-                "Preta",
-                "Fender",
-                "Madeira",
-                "Eletrica",
-                6,
-                "Humbucker",
-                true);
+        Guitarra guitarra = new Guitarra();
 
         Amplificador amplificadorGuitarra = new Amplificador(
                 true, "Roland", 150);

@@ -6,6 +6,19 @@ public class Guitarra extends Especificacao implements FichaTecnica{
     private boolean possuiAlavanca;
     private Amplificador amplificador;
 
+    public Guitarra() {
+        this(
+                "Preta",
+                "Fender",
+                "Madeira",
+                "Eletrica",
+                6,
+                "Humbucker",
+                false
+        );
+    }
+
+
     public Guitarra(String cor, String marca, String material, String tipo,
                     int numeroDeCordas, String tipoCaptador, boolean possuiAlavanca) {
 
